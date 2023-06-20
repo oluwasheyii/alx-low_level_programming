@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * -isalpha - checking if c is a letter in lowercase or uppercase
- * @c: the int that will be used for arguing the fuction 
+ * _isalpha - function to check if c is a letter, lowercase or uppercase
+ * @c: the int that will be used for arguing the fuction
  * Return: (0)
  */
 
