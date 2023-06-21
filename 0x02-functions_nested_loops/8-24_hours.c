@@ -7,26 +7,27 @@
  */
 void jack_bauer(void)
 {
-int hours = 0;
-int mintues = 0;
-int hours_reminder;
-int mins_reminder;
+int a, b, c, d;
 
-while (hours <= 23)
+for (a = 0; a <= 2; a++)
 {
-while (mintues <= 29)
+for (b = 0; b <= 9; b++)
 {
-mins_reminder = mintues % 10;
-hours_reminder = hours % 10;
-_putchar(hours / 10 + '0');
-_putchar(hours_reminder + '0');
-_putchar(';');
-_putchar(mintues / 10 + '0');
-_putchar(mins_reminder + '0');
-mintues++;
+if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
+{
+for (c = 0; c <= 5; c++)
+{
+for (d = 0; d <= 9; d++)
+{
+_putchar(a + '0');
+_putchar(b + '0');
+_putchar(58);
+_putchar(c + '0');
+_putchar(d + '0');
 _putchar('\n');
 }
-hours++;
-mintues = 0;
+}
+}
+}
 }
 }
